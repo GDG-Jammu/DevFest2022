@@ -141,7 +141,7 @@ class MainHeading extends StatelessWidget {
                       image: const DecorationImage(
                         fit: BoxFit.cover,
                         image: AssetImage(
-                          'assets/images/test1.jpeg',
+                          'assets/images/speaker.png',
                           // fit: BoxFit.cover,
                         ),
                       ),
