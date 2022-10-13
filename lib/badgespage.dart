@@ -50,7 +50,7 @@ class _BadgesPageState extends State<BadgesPage> {
           controller: _scrollController,
           child: Container(
               height: screenSize.height,
-              // constraints: const BoxConstraints(maxWidth: 1200, minWidth: 600),
+            
               margin: ResponsiveWidget.isSmallScreen(context)
                   ? const EdgeInsets.symmetric(horizontal: 20)
                   : const EdgeInsets.symmetric(horizontal: 40),
