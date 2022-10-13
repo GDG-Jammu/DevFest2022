@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_devfest/views/landing_page/desktop_landing.dart';
+import 'package:gdg_devfest/views/desktop/desktop_landing.dart';
 
 class ResponsiveWidget extends StatelessWidget {
   final Widget largeScreen;
