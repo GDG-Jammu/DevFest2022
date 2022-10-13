@@ -1,37 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:gdg_devfest/views/landing_page/desktop_landing.dart';
 
-class ResponsiveLayout extends StatelessWidget {
-  const ResponsiveLayout(
-      {Key? key, required this.mobile, this.tablet, required this.desktop})
-      : super(key: key);
+class ResponsiveWidget extends StatelessWidget {
+  final Widget largeScreen;
+  final Widget? mediumScreen;
+  final Widget smallScreen;
 
-  //Different Web Screen Sizes
-  final Widget mobile;
-  final Widget? tablet;
-  final Widget desktop;
+  const ResponsiveWidget({
+    Key? key,
+    required this.largeScreen,
+    this.mediumScreen,
+    required this.smallScreen,
+  }) : super(key: key);
+
+  static bool isSmallScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width < 800;
+  }
+
+  static bool isLargeScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width > 1200;
+  }
+
+  static bool isMediumScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width >= 800 &&
+        MediaQuery.of(context).size.width <= 1200;
+  }
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (context, constraint) {
-        if (constraint.maxWidth < 800) {
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 800) {
           print(
             // height: MediaQuery.of(context).size.height,
             MediaQuery.of(context).size.width,
           );
-          return tablet ?? mobile;
-        } else if (constraint.maxWidth <= 1080 && constraint.maxWidth > 800) {
+          return mediumScreen ?? smallScreen;
+        } else if (constraints.maxWidth <= 1080 && constraints.maxWidth > 800) {
           print(
             // height: MediaQuery.of(context).size.height,
             MediaQuery.of(context).size.width,
           );
-          return tablet ?? desktop;
+          return mediumScreen ?? largeScreen;
         } else {
           print(
             // height: MediaQuery.of(context).size.height,
             MediaQuery.of(context).size.width,
           );
-          return desktop;
+          return largeScreen;
         }
       },
     );

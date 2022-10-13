@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
-import '../../components/header.dart';
+import 'package:gdg_devfest/widgets/bottom_bar.dart';
+import 'package:gdg_devfest/widgets/carousel.dart';
+import 'package:gdg_devfest/widgets/featured_heading.dart';
+import 'package:gdg_devfest/widgets/featured_tiles.dart';
+import 'package:gdg_devfest/widgets/floating_quick_access_bar.dart';
+import 'package:gdg_devfest/widgets/main_heading.dart';
+import 'package:gdg_devfest/widgets/menu_drawer.dart';
+import '../../components/top_bar_contents.dart';
 
 class LandingDesktopView extends StatefulWidget {
   const LandingDesktopView({Key? key}) : super(key: key);
@@ -9,99 +16,69 @@ class LandingDesktopView extends StatefulWidget {
 }
 
 class _LandingDesktopViewState extends State<LandingDesktopView> {
+  final ScrollController _scrollController = ScrollController();
+  double _scrollPosition = 0;
+  double _opacity = 0;
+
+  _scrollListener() {
+    setState(() {
+      _scrollPosition = _scrollController.position.pixels;
+    });
+  }
+
+  @override
+  void initState() {
+    _scrollController.addListener(_scrollListener);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return RawScrollbar(
-      thumbVisibility: true,
-      radius: Radius.circular(10.0),
-      thumbColor: Color.fromARGB(255, 112, 112, 112),
-      child: ListView(
-        children: [
-          Container(
-            color: Color.fromARGB(255, 219, 232, 255),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 30, left: 40, right: 40),
-                  //HEADER
-                  child: desktopHeader(),
+    var screenSize = MediaQuery.of(context).size;
+    _opacity = _scrollPosition < screenSize.height * 0.40
+        ? _scrollPosition / (screenSize.height * 0.40)
+        : 1;
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: screenSize.width < 800
+          ? AppBar(
+              iconTheme: const IconThemeData(color: Colors.blueGrey),
+              elevation: 0,
+              backgroundColor: Colors.white.withOpacity(_opacity),
+              title: const Text(
+                'DevFest Jammu',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  color: Colors.blueGrey,
+                  fontSize: 24,
+                  fontFamily: 'Raleway',
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 1,
                 ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                        top: 60.0, left: 50, right: 40, bottom: 80.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              'Build good things, together.',
-                              softWrap: true,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40.0,
-                                color: Color(0XFF192A3E),
-                              ),
-                            ),
-                            const SizedBox(height: 15.0),
-                            const Text(
-                              'Google Developer Group Jammu is an initiative to concentrate \n the efforts of many developers in and around Jammu to learn,\n share and get productive using the various Google products.',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                color: Color(0XFF192A3E),
-                                // color: Colors.white,
-                                letterSpacing: 1,
-                              ),
-                            ),
-                            const SizedBox(height: 50.0),
-                            Container(
-                              height: 40,
-                              width: 140,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 59, 111, 255),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(5.0),
-                                ),
-                              ),
-                              child: const  Center(
-                                child: Text(
-                                  'Join Now',
-                                  style: TextStyle(
-                                    fontSize: 14.0,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.white,
-                                    letterSpacing: 1.5,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const Flexible(child: SizedBox()),
-                        Flexible(
-                          child: Wrap(
-                            children: [
-                              Image.asset(
-                                'assets/images/urban_woman.png',
-                                // width: 550,
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 20.0),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+              ),
+            )
+          : PreferredSize(
+              preferredSize: Size(screenSize.width, 70),
+              child: TopBarContents(_opacity)),
+      drawer: const MenuDrawer(),
+      body: SingleChildScrollView(
+        controller: _scrollController,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            MainHeading(screenSize: screenSize),
+
+            //FeaturedHeading(screenSize: screenSize),
+            FloatingQuickAccessBar(screenSize: screenSize),
+            FeaturedTiles(screenSize: screenSize),
+            MainCarousel(),
+            SizedBox(
+              height: screenSize.height / 10,
             ),
-          ),
-        ],
+            const BottomBar(),
+          ],
+        ),
       ),
     );
   }
 }
-
