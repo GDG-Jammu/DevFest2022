@@ -49,7 +49,6 @@ class _BadgesPageState extends State<BadgesPage> {
         child: Scrollbar(
           controller: _scrollController,
           child: Container(
-             // color: Colors.red,
               height: screenSize.height,
               // constraints: const BoxConstraints(maxWidth: 1200, minWidth: 600),
               margin: ResponsiveWidget.isSmallScreen(context)
