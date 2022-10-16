@@ -1,5 +1,6 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
+import 'badgespage.dart';
 import 'components/top_bar_contents.dart';
 import 'widgets/info_text.dart';
 import 'widgets/responsive_layout.dart';
@@ -69,7 +70,10 @@ class _HomePage extends State<HomePage> {
               child: FloatingActionButton(
                 backgroundColor: Colors.green,
                 child: Icon(Icons.animation),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => BadgesPage()));
+                },
               ),
             )
           : null,
