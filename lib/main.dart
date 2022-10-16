@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'homepage.dart';
 
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Rubik',
         primaryColor: const Color(0XFF885AF8),
       ),
-      home: const MyHomePage(title: 'Devfest 2022 jammu'),
+      home: const HomePage(title: 'Devfest 2022 jammu'),
     );
   }
 }

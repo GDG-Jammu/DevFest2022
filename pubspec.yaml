@@ -46,6 +46,7 @@ dependencies:
   image_picker: ^0.8.5
   chewie: 
   video_player: 
+  bottom_navy_bar:
 
 dev_dependencies:
   flutter_test:

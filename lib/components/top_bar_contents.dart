@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gdg_devfest/badgespage.dart';
-import 'package:gdg_devfest/homepage.dart';
+
+import '../homepage.dart';
+
 
 class TopBarContents extends StatefulWidget {
   final double opacity;
@@ -58,7 +60,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                   onTap: () {
                     Navigator.of(context).pushAndRemoveUntil(
                         MaterialPageRoute(
-                            builder: (BuildContext context) => const MyHomePage(title: "Devfest jammu 2022",)),
+                            builder: (BuildContext context) => const HomePage(title: "Devfest jammu 2022",)),
                         (route) => false);
                   },
                   child: Column(
