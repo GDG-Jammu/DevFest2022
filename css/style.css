@@ -1,4 +1,31 @@
 #div{
     box-shadow: 5px 10px #888888;
+}
 
+
+
+.underlineAnimation {
+    /* display: inline; */
+    background:
+        linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 3px no-repeat,
+        linear-gradient(currentColor 0 0) 100% 100%/var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+   
+   
+}
+
+.underlineAnimation:hover {
+    --d: 51%;
+}
+
+.underlineAnimationForNav{
+        background:
+                linear-gradient(aqua 0 0) 0 100%/var(--d, 0) 3px no-repeat,
+                linear-gradient(aqua 0 0) 100% 100%/var(--d, 0) 3px no-repeat;
+            transition: 0.5s;
+}
+
+
+.underlineAnimationForNav:hover {
+    --d: 51%;
 }
