@@ -1,4 +1,5 @@
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'homepage.dart';
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        dragDevices: {PointerDeviceKind.mouse, PointerDeviceKind.touch, PointerDeviceKind.stylus, PointerDeviceKind.unknown},
+      ),
       title: 'Devfest jammu 2022',
       theme: ThemeData(
         fontFamily: 'Rubik',

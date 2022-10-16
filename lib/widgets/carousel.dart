@@ -19,12 +19,12 @@ class _MainCarouselState extends State<MainCarousel> {
   int _current = 0;
 
   final List<String> images = [
-    'assets/images/one.jpg',
-    'assets/images/two.jpg',
-    'assets/images/three.jpg',
-    'assets/images/four.jpg',
-    'assets/images/five.jpg',
-    'assets/images/six.jpg',
+    'assets/images/speaker.png',
+    'assets/images/speaker.png',
+    'assets/images/speaker.png',
+    'assets/images/speaker.png',
+    'assets/images/speaker.png',
+    'assets/images/speaker.png',
   ];
 
   final List<String> places = [

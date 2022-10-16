@@ -2,9 +2,9 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 
-import 'views/landing_page/desktop_landing.dart';
-import 'views/landing_page/mobile_landing.dart';
-import 'views/landing_page/tablet_landing.dart';
+import 'views/desktop/desktop_landing.dart';
+import 'views/mobile/mobile_landing.dart';
+import 'views/tablet/tablet_landing.dart';
 import 'widgets/responsive_layout.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -19,12 +19,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white,
-      body: LandingDesktopView(),
-      // ResponsiveWidget(
-      //   smallScreen: LandingPageMobileView(),
-      //   mediumScreen: LandingTabletView(),
-      //   largeScreen: LandingDesktopView(),
-      // ),
+      // body: LandingDesktopView(),
+      body:ResponsiveWidget(
+        smallScreen: LandingPageMobileView(),
+        mediumScreen: LandingTabletView(),
+        largeScreen: LandingDesktopView(),
+      ),
     );
   }
 }
