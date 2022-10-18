@@ -43,8 +43,11 @@ dependencies:
   flutter_sticky_header:
   carousel_slider: 
   shared_preferences: 
+  image_picker: ^0.8.5
   chewie: 
   video_player: 
+  bottom_navy_bar:
+  accordion:
 
 dev_dependencies:
   flutter_test:
