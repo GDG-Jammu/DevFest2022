@@ -1,5 +1,9 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:gdg_devfest/faqpage.dart';
+import 'package:gdg_devfest/partnerspage.dart';
+import 'package:gdg_devfest/speakerspage.dart';
+import 'package:gdg_devfest/teamPage.dart';
 import 'badgespage.dart';
 import 'components/top_bar_contents.dart';
 import 'widgets/info_text.dart';
@@ -24,15 +28,26 @@ class _HomePage extends State<HomePage> {
 
   int _currentIndex = 0;
 
+  final screens = [
+    HomePage(title: ''),
+    SpeakersPage(),
+    PartnersPage(),
+    TeamPage(),
+    FaqPage(),
+  ];
+
   _scrollListener() {
     setState(() {
       _scrollPosition = _scrollController.position.pixels;
     });
   }
 
+  late PageController _pageController;
+
   @override
   void initState() {
     _scrollController.addListener(_scrollListener);
+    _pageController = PageController();
     super.initState();
   }
 
