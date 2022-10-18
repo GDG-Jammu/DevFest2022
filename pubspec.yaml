@@ -47,6 +47,7 @@ dependencies:
   chewie: 
   video_player: 
   bottom_navy_bar:
+  accordion:
 
 dev_dependencies:
   flutter_test:
