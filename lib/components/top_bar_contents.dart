@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gdg_devfest/badgespage.dart';
 import 'package:gdg_devfest/faqpage.dart';
+import 'package:gdg_devfest/partnerspage.dart';
+import 'package:gdg_devfest/speakerspage.dart';
 
 import '../homepage.dart';
 
@@ -143,7 +145,11 @@ class _TopBarContentsState extends State<TopBarContents> {
                       value ? _isHovering[2] = true : _isHovering[2] = false;
                     });
                   },
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            const SpeakersPage()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -181,7 +187,11 @@ class _TopBarContentsState extends State<TopBarContents> {
                       value ? _isHovering[3] = true : _isHovering[3] = false;
                     });
                   },
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            const PartnersPage()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
