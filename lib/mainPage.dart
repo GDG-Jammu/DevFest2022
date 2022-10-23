@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:gdg_devfest/components/bottomFooter.dart';
 
+import 'badgespage.dart';
 import 'faqpage.dart';
 import 'homepage.dart';
 import 'partnerspage.dart';
@@ -37,6 +38,19 @@ class _MainPageState extends State<MainPage> {
 
     return Scaffold(
       body: pages[_currentIndex],
+      floatingActionButton: screenSize.width < 800
+          ? Padding(
+              padding: EdgeInsets.only(bottom: screenSize.height * 0.06),
+              child: FloatingActionButton(
+                backgroundColor: Colors.green,
+                child: Icon(Icons.animation),
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => BadgesPage()));
+                },
+              ),
+            )
+          : null,
       bottomNavigationBar: screenSize.width < 800 ? bottomFooter() : null,
     );
   }

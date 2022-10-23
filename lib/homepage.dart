@@ -1,11 +1,9 @@
-import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+
 import 'package:flutter/material.dart';
 import 'package:gdg_devfest/faqpage.dart';
 import 'package:gdg_devfest/partnerspage.dart';
 import 'package:gdg_devfest/speakerspage.dart';
 import 'package:gdg_devfest/teamPage.dart';
-import 'badgespage.dart';
-import 'components/bottomFooter.dart';
 import 'components/top_bar_contents.dart';
 import 'widgets/info_text.dart';
 import 'widgets/responsive_layout.dart';
@@ -81,19 +79,7 @@ class _HomePage extends State<HomePage> {
           : PreferredSize(
               preferredSize: Size(screenSize.width, 70),
               child: TopBarContents(_opacity)),
-      floatingActionButton: screenSize.width < 800
-          ? Padding(
-              padding: EdgeInsets.only(bottom: screenSize.height * 0.06),
-              child: FloatingActionButton(
-                backgroundColor: Colors.green,
-                child: Icon(Icons.animation),
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (BuildContext context) => BadgesPage()));
-                },
-              ),
-            )
-          : null,
+      
        body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(
