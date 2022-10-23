@@ -63,7 +63,6 @@ class _TopBarContentsState extends State<TopBarContents> {
                     Navigator.of(context).pushAndRemoveUntil(
                         MaterialPageRoute(
                             builder: (BuildContext context) => const HomePage(
-                                  title: "Devfest jammu 2022",
                                 )),
                         (route) => false);
                   },

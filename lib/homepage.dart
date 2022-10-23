@@ -5,12 +5,13 @@ import 'package:gdg_devfest/partnerspage.dart';
 import 'package:gdg_devfest/speakerspage.dart';
 import 'package:gdg_devfest/teamPage.dart';
 import 'badgespage.dart';
+import 'components/bottomFooter.dart';
 import 'components/top_bar_contents.dart';
 import 'widgets/info_text.dart';
 import 'widgets/responsive_layout.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key, required String title}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePage();
@@ -21,15 +22,16 @@ class _HomePage extends State<HomePage> {
   double _scrollPosition = 0;
   double _opacity = 0;
 
-  static const Color gradientStartColor = Color(0xff11998e);
+   static const Color gradientStartColor = Color(0xff11998e);
   static const Color gradientEndColor = Color(0xff0575E6);
 
   String heading = 'About';
 
+
   int _currentIndex = 0;
 
   final screens = [
-    HomePage(title: ''),
+    HomePage(),
     SpeakersPage(),
     PartnersPage(),
     TeamPage(),
@@ -92,8 +94,7 @@ class _HomePage extends State<HomePage> {
               ),
             )
           : null,
-      bottomNavigationBar: screenSize.width < 800 ? footer() : null,
-      body: SingleChildScrollView(
+       body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -849,50 +850,7 @@ class _HomePage extends State<HomePage> {
   }
 
   Widget footer() {
-    if (ResponsiveWidget.isSmallScreen(context)) {
-      return BottomNavyBar(
-        selectedIndex: _currentIndex,
-        showElevation: true,
-        itemCornerRadius: 24,
-        curve: Curves.easeIn,
-        onItemSelected: (index) => setState(() => _currentIndex = index),
-        items: <BottomNavyBarItem>[
-          BottomNavyBarItem(
-            icon: Icon(Icons.home_filled),
-            title: Text('Home'),
-            activeColor: Colors.red,
-            textAlign: TextAlign.center,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.person),
-            title: Text('Speakers'),
-            activeColor: Colors.yellow,
-            textAlign: TextAlign.center,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.group_add),
-            title: Text(
-              ' Partners',
-            ),
-            activeColor: Colors.blue,
-            textAlign: TextAlign.center,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.group),
-            title: Text('Team'),
-            activeColor: Colors.orange,
-            textAlign: TextAlign.center,
-          ),
-          BottomNavyBarItem(
-            icon: Icon(Icons.question_answer),
-            title: Text('FAQ'),
-            activeColor: Colors.green,
-            textAlign: TextAlign.center,
-          ),
-        ],
-      );
-    } else {
-      return Container(
+   return Container(
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(0.0)),
           gradient: LinearGradient(
@@ -966,4 +924,4 @@ class _HomePage extends State<HomePage> {
       );
     }
   }
-}
+
