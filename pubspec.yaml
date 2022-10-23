@@ -48,6 +48,7 @@ dependencies:
   video_player: 
   bottom_navy_bar:
   accordion:
+  flip_card:
 
 dev_dependencies:
   flutter_test:

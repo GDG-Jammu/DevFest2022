@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'homepage.dart';
+import 'mainPage.dart';
 
 
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Rubik',
         primaryColor: const Color(0XFF885AF8),
       ),
-      home: const HomePage(title: 'Devfest 2022 jammu'),
+      home: const MainPage(),
     );
   }
 }

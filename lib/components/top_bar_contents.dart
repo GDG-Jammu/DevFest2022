@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:gdg_devfest/badgespage.dart';
 import 'package:gdg_devfest/faqpage.dart';
-
-import '../homepage.dart';
+import 'package:gdg_devfest/mainPage.dart';
+import 'package:gdg_devfest/partnerspage.dart';
+import 'package:gdg_devfest/speakerspage.dart';
 
 class TopBarContents extends StatefulWidget {
   final double opacity;
 
-  TopBarContents(this.opacity);
+  const TopBarContents(this.opacity);
 
   @override
   _TopBarContentsState createState() => _TopBarContentsState();
@@ -60,9 +61,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                   onTap: () {
                     Navigator.of(context).pushAndRemoveUntil(
                         MaterialPageRoute(
-                            builder: (BuildContext context) => const HomePage(
-                                  title: "Devfest jammu 2022",
-                                )),
+                            builder: (BuildContext context) =>
+                                const MainPage()),
                         (route) => false);
                   },
                   child: Column(
@@ -143,7 +143,11 @@ class _TopBarContentsState extends State<TopBarContents> {
                       value ? _isHovering[2] = true : _isHovering[2] = false;
                     });
                   },
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            const SpeakersPage()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -181,7 +185,11 @@ class _TopBarContentsState extends State<TopBarContents> {
                       value ? _isHovering[3] = true : _isHovering[3] = false;
                     });
                   },
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            const PartnersPage()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
