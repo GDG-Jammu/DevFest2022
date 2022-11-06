@@ -88,7 +88,7 @@ class _SpeakersPageState extends State<SpeakersPage> {
                       fontSize: 14.0,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
-                      letterSpacing: 1.5,
+                      letterSpacing: 1.2,
                     ),
                   ),
                 ),
@@ -119,10 +119,12 @@ class _SpeakersPageState extends State<SpeakersPage> {
                                 Text('Front',
                                     style:
                                         Theme.of(context).textTheme.headline1),
-                                Container(child: Text('Click here to see Details',
+                                Container(
+                                  child: Text('Click here to see Details',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText1),),
+                                          .bodyText1),
+                                ),
                               ],
                             ),
                           ),

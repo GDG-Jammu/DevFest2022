@@ -88,7 +88,7 @@ class _PartnersPageState extends State<PartnersPage> {
                       fontSize: 14.0,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
-                      letterSpacing: 1.5,
+                      letterSpacing: 1.2,
                     ),
                   ),
                 ),
