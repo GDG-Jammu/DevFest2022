@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gdg_devfest/faqpage.dart';
 import 'package:gdg_devfest/partnerspage.dart';
 import 'package:gdg_devfest/speakerspage.dart';
@@ -20,11 +20,10 @@ class _HomePage extends State<HomePage> {
   double _scrollPosition = 0;
   double _opacity = 0;
 
-   static const Color gradientStartColor = Color(0xff11998e);
+  static const Color gradientStartColor = Color(0xff11998e);
   static const Color gradientEndColor = Color(0xff0575E6);
 
   String heading = 'About';
-
 
   int _currentIndex = 0;
 
@@ -79,8 +78,7 @@ class _HomePage extends State<HomePage> {
           : PreferredSize(
               preferredSize: Size(screenSize.width, 70),
               child: TopBarContents(_opacity)),
-      
-       body: SingleChildScrollView(
+      body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -143,7 +141,7 @@ class _HomePage extends State<HomePage> {
                             fontSize: 14.0,
                             fontWeight: FontWeight.w500,
                             color: Colors.white,
-                            letterSpacing: 1.5,
+                            letterSpacing: 1.2,
                           ),
                         ),
                       ),
@@ -673,65 +671,240 @@ class _HomePage extends State<HomePage> {
                   SizedBox(
                     height: screenSize.height * 0.1,
                   ),
-                  Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.only(right: 10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color:
-                                Colors.yellowAccent.shade100.withOpacity(0.5),
-                            image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(
-                                'assets/images/fluttercircle.png',
-                                // fit: BoxFit.cover,
+                  screenSize.width < 800
+                      ? Container(
+                          width: screenSize.width,
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.yellowAccent.shade100
+                                            .withOpacity(0.5),
+                                        image: const DecorationImage(
+                                          fit: BoxFit.contain,
+                                          image: AssetImage(
+                                            'assets/images/flutter.png',
+                                            // fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      width: 100,
+                                      height: 100,
+                                      child: const Text(''),
+                                    ),
+                                    Container(
+                                      margin: const EdgeInsets.only(right: 10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.yellowAccent.shade100
+                                            .withOpacity(0.5),
+                                        image: const DecorationImage(
+                                          fit: BoxFit.contain,
+                                          image: AssetImage(
+                                            'assets/images/firebase.png',
+                                            // fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      width: 100,
+                                      height: 100,
+                                      child: const Text(''),
+                                    ),
+                                    Container(
+                                      margin: const EdgeInsets.only(right: 10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.yellowAccent.shade100
+                                            .withOpacity(0.5),
+                                        image: const DecorationImage(
+                                          fit: BoxFit.contain,
+                                          image: AssetImage(
+                                            'assets/images/google_assistant.png',
+                                            // fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      width: 100,
+                                      height: 100,
+                                      child: const Text(''),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(right: 10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.yellowAccent.shade100
+                                            .withOpacity(0.5),
+                                      ),
+                                      width: 100,
+                                      height: 100,
+                                      child: SvgPicture.asset(
+                                        'assets/images/android-4.svg',
+                                        fit: BoxFit.cover,
+
+                                        // fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    Container(
+                                      margin: const EdgeInsets.only(right: 10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.yellowAccent.shade100
+                                            .withOpacity(0.5),
+                                      ),
+                                      width: 100,
+                                      height: 100,
+                                      child: SvgPicture.asset(
+                                        'assets/images/google_cloud.svg',
+                                        fit: BoxFit.contain,
+                                        color: Colors.red,
+
+                                        // fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    Container(
+                                      margin: const EdgeInsets.only(right: 10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.yellowAccent.shade100
+                                            .withOpacity(0.5),
+                                        image: const DecorationImage(
+                                          fit: BoxFit.contain,
+                                          image: AssetImage(
+                                            'assets/images/firebase.png',
+                                            // fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      width: 100,
+                                      height: 100,
+                                      child: const Text(''),
+                                    ),
+                                  ],
+                                ),
+                              ]),
+                        )
+                      : Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                              Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.yellowAccent.shade100
+                                      .withOpacity(0.5),
+                                  image: const DecorationImage(
+                                    fit: BoxFit.contain,
+                                    image: AssetImage(
+                                      'assets/images/flutter.png',
+                                      // fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                width: screenSize.width * 0.1,
+                                height: screenSize.height * 0.13,
+                                child: const Text(''),
                               ),
-                            ),
-                          ),
-                          width: screenSize.width * 0.1,
-                          height: screenSize.height * 0.13,
-                          child: const Text(''),
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(right: 10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color:
-                                Colors.yellowAccent.shade100.withOpacity(0.5),
-                            image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(
-                                'assets/images/androidcircle.png',
-                                // fit: BoxFit.cover,
+                              Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.yellowAccent.shade100
+                                      .withOpacity(0.5),
+                                  image: const DecorationImage(
+                                    fit: BoxFit.contain,
+                                    image: AssetImage(
+                                      'assets/images/firebase.png',
+                                      // fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                width: screenSize.width * 0.1,
+                                height: screenSize.height * 0.13,
+                                child: const Text(''),
                               ),
-                            ),
-                          ),
-                          width: screenSize.width * 0.1,
-                          height: screenSize.height * 0.13,
-                          child: const Text(''),
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(right: 10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color:
-                                Colors.yellowAccent.shade100.withOpacity(0.5),
-                            image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(
-                                'assets/images/firebasecircle.png',
-                                // fit: BoxFit.cover,
+                              Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.yellowAccent.shade100
+                                      .withOpacity(0.5),
+                                  image: const DecorationImage(
+                                    fit: BoxFit.contain,
+                                    image: AssetImage(
+                                      'assets/images/google_assistant.png',
+                                      // fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                width: screenSize.width * 0.1,
+                                height: screenSize.height * 0.13,
+                                child: const Text(''),
                               ),
-                            ),
-                          ),
-                          width: screenSize.width * 0.1,
-                          height: screenSize.height * 0.13,
-                          child: const Text(''),
-                        ),
-                      ]),
+                              Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.yellowAccent.shade100
+                                      .withOpacity(0.5),
+                                ),
+                                width: 100,
+                                height: 100,
+                                child: SvgPicture.asset(
+                                  'assets/images/android-4.svg',
+                                  fit: BoxFit.cover,
+
+                                  // fit: BoxFit.cover,
+                                ),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.yellowAccent.shade100
+                                      .withOpacity(0.5),
+                                ),
+                                width: 100,
+                                height: 100,
+                                child: SvgPicture.asset(
+                                  'assets/images/google_cloud.svg',
+                                  fit: BoxFit.contain,
+                                  color: Colors.red,
+
+                                  // fit: BoxFit.cover,
+                                ),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.yellowAccent.shade100
+                                      .withOpacity(0.5),
+                                  image: const DecorationImage(
+                                    fit: BoxFit.contain,
+                                    image: AssetImage(
+                                      'assets/images/firebase.png',
+                                      // fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                width: 100,
+                                height: 100,
+                                child: const Text(''),
+                              ),
+                            ]),
                   Container(
                     alignment: Alignment.topCenter,
                     padding: EdgeInsets.only(
@@ -768,8 +941,8 @@ class _HomePage extends State<HomePage> {
                     child: SizedBox(
                       width: screenSize.width * 0.8,
                       height: ResponsiveWidget.isSmallScreen(context)
-                          ? screenSize.width * 0.8
-                          : screenSize.width * 0.3,
+                          ? screenSize.height * 0.8
+                          : screenSize.height * 0.4,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -817,7 +990,7 @@ class _HomePage extends State<HomePage> {
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white,
-                                  letterSpacing: 1.5,
+                                  letterSpacing: 1.2,
                                 ),
                               ),
                             ),
@@ -829,6 +1002,9 @@ class _HomePage extends State<HomePage> {
                 ],
               ),
             ),
+            SizedBox(
+              height: screenSize.height * 0.1,
+            )
           ],
         ),
       ),
@@ -836,78 +1012,77 @@ class _HomePage extends State<HomePage> {
   }
 
   Widget footer() {
-   return Container(
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(0.0)),
-          gradient: LinearGradient(
-              colors: [gradientStartColor, gradientEndColor],
-              begin: FractionalOffset(0.2, 0.2),
-              end: FractionalOffset(1.0, 1.0),
-              stops: [0.0, 1.0],
-              tileMode: TileMode.clamp),
-        ),
-        padding: const EdgeInsets.all(30),
-        //color: Colors.blueGrey[900],
-        child: Column(
-          children: [
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 20.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        heading,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  width: 2,
-                  height: 150,
-                ),
-                Column(
+    return Container(
+      decoration: const BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(0.0)),
+        gradient: LinearGradient(
+            colors: [gradientStartColor, gradientEndColor],
+            begin: FractionalOffset(0.2, 0.2),
+            end: FractionalOffset(1.0, 1.0),
+            stops: [0.0, 1.0],
+            tileMode: TileMode.clamp),
+      ),
+      padding: const EdgeInsets.all(30),
+      //color: Colors.blueGrey[900],
+      child: Column(
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(bottom: 20.0),
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    InfoText(
-                      type: 'Email',
-                      text: 'devfestjammu@gmail.com',
+                    Text(
+                      heading,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
-                    const SizedBox(height: 5),
-                    InfoText(
-                      type: 'Address',
-                      text: '128, Xyz Road, Jammu, MN - 123456',
-                    )
+                    const SizedBox(
+                      height: 10,
+                    ),
                   ],
                 ),
-              ],
-            ),
-            const Divider(
-              color: Colors.white,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Copyright © 2021 | Devfest Jammu',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 14,
               ),
+              Container(
+                color: Colors.white,
+                width: 2,
+                height: 150,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  InfoText(
+                    type: 'Email',
+                    text: 'devfestjammu@gmail.com',
+                  ),
+                  const SizedBox(height: 5),
+                  InfoText(
+                    type: 'Address',
+                    text: '128, Xyz Road, Jammu, MN - 123456',
+                  )
+                ],
+              ),
+            ],
+          ),
+          const Divider(
+            color: Colors.white,
+          ),
+          const SizedBox(height: 20),
+          const Text(
+            'Copyright © 2021 | Devfest Jammu',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 14,
             ),
-          ],
-        ),
-      );
-    }
+          ),
+        ],
+      ),
+    );
   }
-
+}
