@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:gdg_devfest/widgets/responsive_layout.dart';
+import 'package:gdg_devfest/ui/widgets/responsive_layout.dart';
 
-import 'components/top_bar_contents.dart';
+import '../components/top_bar_contents.dart';
 
 class PartnersPage extends StatefulWidget {
   const PartnersPage({super.key});

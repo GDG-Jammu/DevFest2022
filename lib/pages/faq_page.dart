@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import 'components/top_bar_contents.dart';
+import '../components/top_bar_contents.dart';
 
 class FaqPage extends StatefulWidget {
   const FaqPage({super.key});

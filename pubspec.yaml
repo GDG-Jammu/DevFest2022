@@ -49,6 +49,8 @@ dependencies:
   bottom_navy_bar:
   accordion:
   flip_card:
+  preview: ^0.0.5
+  # device_preview: 1.1.0
 
 dev_dependencies:
   flutter_test:

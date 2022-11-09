@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_devfest/widgets/responsive_layout.dart';
+import 'package:gdg_devfest/ui/widgets/responsive_layout.dart';
 import 'package:image_picker/image_picker.dart';
-import 'components/top_bar_contents.dart';
+import '../components/top_bar_contents.dart';
 
 class BadgesPage extends StatefulWidget {
   BadgesPage({Key? key}) : super(key: key);

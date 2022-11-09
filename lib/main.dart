@@ -1,11 +1,10 @@
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import 'homepage.dart';
-import 'mainPage.dart';
-
-
+// import 'home_page.dart';
+// import 'main_page.dart';
+import 'pages/main_page.dart';
+import 'utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +17,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       scrollBehavior: const MaterialScrollBehavior().copyWith(
-        dragDevices: {PointerDeviceKind.mouse, PointerDeviceKind.touch, PointerDeviceKind.stylus, PointerDeviceKind.unknown},
+        dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown
+        },
       ),
+      routes: routes,
       title: 'Devfest jammu 2022',
       theme: ThemeData(
         fontFamily: 'Rubik',

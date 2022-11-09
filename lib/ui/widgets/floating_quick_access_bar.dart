@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_devfest/widgets/responsive_layout.dart';
+import 'package:gdg_devfest/ui/widgets/responsive_layout.dart';
 
 class FloatingQuickAccessBar extends StatefulWidget {
   const FloatingQuickAccessBar({

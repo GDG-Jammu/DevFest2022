@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gdg_devfest/faqpage.dart';
-import 'package:gdg_devfest/partnerspage.dart';
-import 'package:gdg_devfest/speakerspage.dart';
-import 'package:gdg_devfest/teamPage.dart';
-import 'components/top_bar_contents.dart';
-import 'widgets/info_text.dart';
-import 'widgets/responsive_layout.dart';
+import '../components/top_bar_contents.dart';
+import '../ui/widgets/info_text.dart';
+import '../ui/widgets/responsive_layout.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -27,13 +23,13 @@ class _HomePage extends State<HomePage> {
 
   int _currentIndex = 0;
 
-  final screens = [
-    HomePage(),
-    SpeakersPage(),
-    PartnersPage(),
-    TeamPage(),
-    FaqPage(),
-  ];
+  // final screens = [
+  //   HomePage(),
+  //   SpeakersPage(),
+  //   PartnersPage(),
+  //   TeamPage(),
+  //   FaqPage(),
+  // ];
 
   _scrollListener() {
     setState(() {

@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_devfest/badgespage.dart';
-import 'package:gdg_devfest/faqpage.dart';
-import 'package:gdg_devfest/mainPage.dart';
-import 'package:gdg_devfest/partnerspage.dart';
-import 'package:gdg_devfest/speakerspage.dart';
+// import 'package:gdg_devfest/badges_page.dart';
+// import 'package:gdg_devfest/faq_page.dart';
+// import 'package:gdg_devfest/main_page.dart';
+// import 'package:gdg_devfest/partnerspage.dart';
+// import 'package:gdg_devfest/speakers_page.dart';
+
+import '../pages/badges_page.dart';
+import '../pages/faq_page.dart';
+import '../pages/main_page.dart';
+import '../pages/partnerspage.dart';
+import '../pages/speakers_page.dart';
 
 class TopBarContents extends StatefulWidget {
   final double opacity;

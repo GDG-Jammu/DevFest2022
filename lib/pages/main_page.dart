@@ -4,13 +4,13 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:gdg_devfest/components/bottomFooter.dart';
 
-import 'badgespage.dart';
-import 'faqpage.dart';
-import 'homepage.dart';
+import 'badges_page.dart';
+import 'faq_page.dart';
+import 'home_page.dart';
 import 'partnerspage.dart';
-import 'speakerspage.dart';
-import 'teamPage.dart';
-import 'widgets/info_text.dart';
+import 'speakers_page.dart';
+import 'team_page.dart';
+// import 'widgets/info_text.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

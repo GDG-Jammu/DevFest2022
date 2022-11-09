@@ -1,12 +1,17 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../faqpage.dart';
-import '../homepage.dart';
-import '../partnerspage.dart';
-import '../speakerspage.dart';
-import '../teamPage.dart';
-import '../widgets/info_text.dart';
+// import '../faq_page.dart';
+// import '../home_page.dart';
+import '../pages/faq_page.dart';
+import '../pages/home_page.dart';
+import '../pages/partnerspage.dart';
+import '../pages/speakers_page.dart';
+import '../pages/team_page.dart';
+// import '../partnerspage.dart';
+// import '../speakers_page.dart';
+// import '../team_page.dart';
+import '../ui/widgets/info_text.dart';
 
 class BottomFooter extends StatefulWidget {
   const BottomFooter({super.key});
