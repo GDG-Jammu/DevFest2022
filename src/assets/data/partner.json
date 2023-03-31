@@ -1,0 +1,63 @@
+[
+    {
+        "name":"GDSC IIT Jammu",
+        "desc":"The Google Developer Student Club (GDSC) at IIT Jammu is a club open to all undergraduate and graduate students with an interest in learning about what it means to be a developer. By joining our chapter, club members learn what it means to form the bridge between the theory and concepts taught in classes and practice with industry developer tools.",
+        "img":"gd.png",
+        "link":"https://gdsc.community.dev/indian-institute-of-technology-jammu/"
+    },
+    {
+        "name":"GDSC MIET Jammu",
+        "desc":"The Google Developer Student Club (GDSC) at MIET Jammu is a club open to all undergraduate and graduate students with an interest in learning about what it means to be a developer. By joining our chapter, club members learn what it means to form the bridge between the theory and concepts taught in classes and practice with industry developer tools.",
+        "img":"gd.png",
+        "link":"https://gdsc.community.dev/model-institute-of-engineering-and-technology-jammu/"
+    },
+    {
+        "name":"GDSC MRIIRS",
+        "desc":"We aim to provide you with an opportunity to get to know about all the updates regarding the boot camps, online and offline sessions, technical talks, etc that we arrange and get to learn all the tech topics that interest you through our community channels for free.",
+        "img":"gd.png",
+        "link":"https://gdsc.community.dev/manav-rachna-international-institute-of-research-and-studies-faridabad//"
+    },
+    {
+        "name":"Keep Up",
+        "desc":"Your Path to success. We provide Jobs, Internships, training, and free consultancy for students as well as professionals.",
+        "img":"ku.jpeg",
+        "link":"https://www.linkedin.com/company/trainings-internships/?originalSubdomain=in"
+    },
+    {
+        "name":"Girl Up J&K",
+        "desc":"A club in the GirlUp Campaign chain, a UN Foundation Initiative.",
+        "img":"gjk.jpg",
+        "link":"https://in.linkedin.com/company/girlup-jammu-kashmir"
+    },
+    {
+        "name":"DevOpsCommunity",
+        "desc":"DevOps/SRE community is for those folks who are trying to learn or explore DevOps with the help of experienced professionals.",
+        "img":"devops.png",
+        "link":"https://github.com/rohitg00/DevOpsCommunity"
+    },
+    {
+        "name":"OCD(India)",
+        "desc":"We are a community-driven organization which assists next-generation leaders and communities to grow in India",
+        "img":"ocd.jpg",
+        "link":"https://twitter.com/OCD_India"
+    },
+    {
+        "name":"Befikra Community",
+        "desc":"A place for mentors to guide budding tech enthusiasts as well as developers and corporates to connect and work for a common cause.",
+        "img":"bc.png",
+        "link":"https://befikracommunity.in/"
+    },
+    {
+        "name":"Code8",
+        "desc":"Learn, Build and conquer like a pro with us. Join the community of thousands of likemind professionals now for free. ",
+        "img":"c8.png",
+        "link":"https://www.codeate.in/"
+    },
+    {
+        "name":"CodeSetGo",
+        "desc":"CodeSetGo is a community made for the students and made by the students. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes",
+        "img":"csg.png",
+        "link":"https://codesetgo.github.io/"
+    }
+
+]

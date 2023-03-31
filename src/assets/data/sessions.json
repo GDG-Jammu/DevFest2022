@@ -1,0 +1,314 @@
+[
+    {
+        "id": "511",
+        "slide": "",
+        "title": "Working at Google and Opportunities for students",
+        "description": "what it's REALLY like to work at Google. Learn more about working experience, opportunities for students and sample Interview Process",
+        "track": "Mobile",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          111
+        ],
+        "visible":"1"
+      },
+    {
+      "id": "500",
+      "slide": "",
+      "title": "Building webview at scale",
+      "description": "How big techs use webview in their mobile apps and tips for writing webapps optimised and memory leak free",
+      "track": "Mobile",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+        100 
+      ],
+      "visible":"1"
+    }
+    ,
+    {
+      "id": "506",
+      "slide": "",
+      "title": "The Flutterfire adventure",
+      "description": "In this talk, I give an overview of what Flutter is and how beginners can leverage Flutter to start their developer journey. From the basic building blocks to unleashing some crazy magic with Flutter, it will be a roller coaster ride of learning, surprises, and hope.",
+      "track": "Mobile",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+        106 
+      ],
+      "visible":"1"
+    }
+    ,
+    {
+      "id": "503",
+      "slide": "",
+      "title": "The Flutter Curve",
+      "description": "Flutter is beautiful and Firebase is powerful but together they become wonderful. In this talk, I will walk through the FlutterFire adventure which is all you need to make your app impactful.",
+      "track": "Mobile",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+        103
+      ],
+      "visible":"1"
+    }
+    ,
+    {
+      "id": "508",
+      "slide": "",
+      "title": "What's New in Firebase Details",
+      "description": "Session on Updates in Firebase for Building Large Scale Solutions",
+      "track": "Firebase",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+        108
+      ],
+      "visible":"1"
+    },
+    {
+        "id": "502",
+        "slide": "",
+        "title": "Workshop on Android",
+        "description": "Let's see how to integrate Google assistant action app with Flutter application.",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          102
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "509",
+        "slide": "",
+        "title": "Workshop on Play Store Policies",
+        "description": "Right way to publish app on Google Play Store",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          109
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "505",
+        "slide": "",
+        "title": "Compose Your app",
+        "description": "Learn how to build better apps faster with Jetpack Compose",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          105
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "504",
+        "slide": "",
+        "title": "Non-CS Women in Tech",
+        "description": "There has been a corporate wave related to women in tech and opportunities too. However many are limited to women pursuing or having degree in Computer Science, IT, Electrical or other. What will happen to other woman not having certified degree related to same?",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          104
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "501",
+        "slide": "",
+        "title": "Serverless Architecture",
+        "description": "We will discussing on serverless architecture.",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          101
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "512",
+        "slide": "",
+        "title": "Tech Communities, Gamification and Creativity",
+        "description": "Did you ever become a part of a community, particularly a technical one, with the expectation of growing holistically as an individual but rather got stuck in an endless loop of redundant tasks?",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          112
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "513",
+        "slide": "",
+        "title": "Crypto And Applications in India",
+        "description": "Why Web3 is important in the Tech world and how we can use the resource to create the next generation of products around it.",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          113
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "507",
+        "slide": "",
+        "title": "JAX 101",
+        "description": "Accelerate your Deep Learning using JAX",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          107
+        ],
+        "visible":"1"
+      },
+      {
+        "id": "510",
+        "slide": "",
+        "title": "Technology at early stage startup",
+        "description": "The session is aimed at finding healthy balance between building stuff from ground up and finding easier solutions such as no-code, low code and pre-built solutions.",
+        "track": "Android",
+        "link": "",
+        "time":"30 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "30 min",
+        "speakers": [
+          110
+        ],
+        "visible":"1"
+      },
+    {
+      "id": "520",
+      "slide": "",
+      "title": "Lunch",
+      "description": "Lunch",
+      "track": "Web",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+       
+      ],
+      "visible":"1"
+    }
+    ,
+    {
+      "id": "521",
+      "slide": "",
+      "title": "Networking Session",
+      "description": "Networking Session",
+      "track": "Web",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+       
+      ],
+      "visible":"1"
+    }
+    ,
+    {
+      "id": "522",
+      "slide": "",
+      "title": "Closing Notes",
+      "description": "Closing Notes",
+      "track": "Web",
+      "link": "",
+      "time":"30 min",
+      "format": "Day 1",
+      "date": " Dec 19, 2022",
+      "timeDuration": "30 min",
+      "speakers": [
+       
+      ],
+      "visible":"1"
+    },
+    {
+        "id": "523",
+        "slide": "",
+        "title": "Registrations",
+        "description": "Registrations",
+        "track": "Web",
+        "link": "",
+        "time":"60 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "60 min",
+        "speakers": [
+         
+        ],
+        "visible":"1"
+      }
+      ,
+    {
+        "id": "524",
+        "slide": "",
+        "title": "Welcome Keynote",
+        "description": "Welcome Keynote",
+        "track": "Web",
+        "link": "",
+        "time":"60 min",
+        "format": "Day 1",
+        "date": " Dec 19, 2022",
+        "timeDuration": "60 min",
+        "speakers": [
+         
+        ],
+        "visible":"1"
+      }
+
+  ]
+  

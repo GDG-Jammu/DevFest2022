@@ -1,0 +1,125 @@
+[
+    {
+      "day": "1",
+      "date": "Dec 19, 2022",
+      "schedule": [
+        {
+            "startTime": "9:30",
+            "endTime": "10:30",
+            "session": 523
+        },
+        {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "session": 524
+        },
+        {
+          "startTime": "11:00",
+          "endTime": "11:30",
+          "session": 511
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:00",
+          "session": 506
+        },
+        {
+          "startTime": "12:00",
+          "endTime": "12:30",
+          "session": 503
+        },
+        {
+          "startTime": "12:30",
+          "endTime": "13:00",
+          "session": 508
+        },
+    
+        {
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "session": 520
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:30",
+          "session": 521
+        },
+        {
+          "startTime": "14:30",
+          "endTime": "15:00",
+          "session": 522
+        }
+       
+      ]
+    },
+    {
+      "day": "2",
+      "date": "Oct 16, 2022",
+      "schedule": [
+        {
+            "startTime": "11:30",
+            "endTime": "11:45",
+            "session": 504
+          },
+          {
+            "startTime": "11:45",
+            "endTime": "12:00",
+            "session": 501
+          },
+          {
+            "startTime": "12:00",
+            "endTime": "12:15",
+            "session": 512
+          },
+          {
+            "startTime": "12:15",
+            "endTime": "12:30",
+            "session": 513
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "12:45",
+            "session": 507
+          }
+      ]
+    },
+    {
+      "day": "3",
+      "date": "Oct 16, 2022",
+      "schedule": [
+        {
+          "startTime": "12:00",
+          "endTime": "12:30",
+          "session": 502
+        }
+        ,
+        {
+          "startTime": "12:30",
+          "endTime": "13:00",
+          "session": 509
+        }
+      ]
+    },
+    {
+        "day": "4",
+        "date": "Oct 16, 2022",
+        "schedule": [
+          {
+              "startTime": "11:30",
+              "endTime": "12:00",
+              "session": 505
+            },
+            {
+              "startTime": "12:00",
+              "endTime": "12:30",
+              "session": 500
+            },  
+            {
+                "startTime": "12:30",
+                "endTime": "13:00",
+                "session": 510
+              }
+        ]
+      }
+  ]
+  
